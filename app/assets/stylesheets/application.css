@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #000 !important;
+}
+
+h1, h2 {
+	color: #fff !important;
+}
+
+.clear {
+	clear: both;
+}

@@ -1,0 +1,2 @@
+class SwellyController < ApplicationController
+end

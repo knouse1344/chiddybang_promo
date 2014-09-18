@@ -1,0 +1,75 @@
+// Place all the styles related to the swelly controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.margin-top {
+	margin-top: 40px;
+}
+
+#header-logo {
+	padding-top: 150px;
+	text-align: center;
+	position: relative;
+	width: 693px;
+	margin: auto;
+
+	.spark-top {
+		position: absolute;
+		top: 95px;
+		left: 40px;
+		visibility: hidden;
+	}
+
+	.spark-corner {
+		position: absolute;
+		right: -78px;
+		top: 127px;
+		visibility: hidden;
+	}
+
+	.chiddy {
+		width: 390px;
+		float: left;
+		visibility: hidden;
+	}
+
+	.bang {
+		width: 303px;
+		visibility: hidden;
+	}
+
+	.subheading {
+		position: relative;
+		top: -78px;
+		right: -21px;
+		width: 570px;
+	}
+}
+
+.triangle {
+	width: 633px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position: relative;
+
+	.eng {
+		width: 309px;
+		margin: auto;
+	}
+
+	.ent {
+		position: relative;
+		top: -85px;
+		float: right;
+		width: 316px;
+	}
+
+	.des {
+		position: relative;
+		top: -85px;
+		float: left;
+		width: 317px;
+	}
+}

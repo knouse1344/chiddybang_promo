@@ -7,6 +7,10 @@
 	margin-top: 40px;
 }
 
+.text-center {
+	text-align: center;
+}
+
 #header-logo {
 	padding-top: 150px;
 	text-align: center;
@@ -44,7 +48,54 @@
 		top: -78px;
 		right: -21px;
 		width: 570px;
+		visibility: hidden;
 	}
+}
+
+#act-one {
+	visibility: hidden;
+	padding-bottom: 120px;
+
+	p {
+		color: #fff;
+		font-size: 24px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+	}
+
+	h2 {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	i {
+		font-size: 48px;
+		color: #FAB608;
+	}
+}
+
+#act-two {
+	visibility: hidden;
+	padding-bottom: 120px;
+
+	h2 {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	i {
+		font-size: 48px;
+		color: #FAB608;
+	}
+}
+
+#act-three {
+	visibility: hidden;
+	padding-bottom: 120px;
 }
 
 .triangle {
@@ -56,20 +107,56 @@
 
 	.eng {
 		width: 309px;
-		margin: auto;
+		position: relative;
+		left: 0;
+		right: 0;
+		cursor: pointer;
+		transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
 	}
 
 	.ent {
 		position: relative;
-		top: -85px;
+		margin-top: -85px;
 		float: right;
+		left: 0;
+		right: 0;
 		width: 316px;
+		cursor: pointer;
+		transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
 	}
 
 	.des {
 		position: relative;
-		top: -85px;
+		margin-top: -85px;
 		float: left;
+		left: 0;
+		right: 0;
 		width: 317px;
+		cursor: pointer;
+		transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+	}
+
+	.eng_clicked {
+		margin-top: 200px;
+		opacity: .25;
+	}
+
+	.ent_clicked {
+		left: -200px;
+		opacity: .25;
+	}	
+
+	.des_clicked {
+		left: 200px;
+		opacity: .25;
 	}
 }

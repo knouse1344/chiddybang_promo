@@ -12,21 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 
-//TIMERS
+//TIMER
 
-function infinite_timer_short(item) {
+function infinite_timer(item, time) {
 	setTimeout(function () {
 		infinite(item);
-	}, 6000);
-}
-function infinite_timer_long(item) {
-	setTimeout(function () {
-		infinite(item);
-	}, 10000);
+	}, time);
 }
 
 //TIME CONTROL
@@ -35,8 +29,11 @@ function infinite(item) {
 		$(item).fadeIn("fast");
 	})
 
-	infinite_timer_long(item);	
+	var numeral = Math.floor((Math.random()*20000)+1);
+	
+	infinite_timer(item, numeral);	
 }
+
 
 
 // FLICKER FUNCTIONS
@@ -99,6 +96,7 @@ function flicker_slow(item, count, callback, current) {
 
 
 
+
 // CUSTOM JQUERY VISIBILITY FUNCTIONS
 
 jQuery.fn.visible = function() {
@@ -112,13 +110,24 @@ jQuery.fn.invisible = function() {
 
 
 
+
 // START FLICKERING
 
 setTimeout(function () {
     flicker_quick("#spark-corner", 2, function () {
         $("#spark-corner").fadeIn("fast");
     })
+
+    infinite_timer("#spark-corner");
 }, 1000)
+
+setTimeout(function () {
+    flicker_slow(".subheading", 3, function () {
+        $(".subheading").fadeIn("fast");
+    })
+
+    infinite_timer(".subheading");
+}, 1300)
 
 setTimeout(function () {
     flicker_spark("#spark", 3, function () {
@@ -131,14 +140,51 @@ setTimeout(function () {
         $(".bang").fadeIn("fast");
     })
 
-    infinite_timer_short(".bang");
+    infinite_timer(".bang");
 }, 950)
 
 setTimeout(function () {
     flicker_slow(".chiddy", 4, function () {
-        $(".chiddy").css("opacity", "1");
+        $(".chiddy").fadeIn("fast");
     })
 
-    infinite_timer_long(".chiddy");
+    infinite_timer(".chiddy");
 }, 1150)
 
+setTimeout(function () {
+    flicker_slow("#act-one", 4, function () {
+
+    })
+}, 1550)
+
+setTimeout(function () {
+    flicker_quick("#act-two", 4, function () {
+
+    })
+}, 2000)
+
+setTimeout(function () {
+    flicker_slow("#act-three", 4, function () {
+
+    })
+}, 2250)
+
+
+
+// JQUERY EVENTS
+
+$(document).ready(function() {
+	
+	$('.eng').on("click", function() {
+		$('.ent').toggleClass('eng_clicked');
+		$('.des').toggleClass('eng_clicked');
+	});
+	$('.ent').on("click", function() {
+		$('.eng').toggleClass('ent_clicked');
+		$('.des').toggleClass('ent_clicked');
+	});
+	$('.des').on("click", function() {
+		$('.eng').toggleClass('des_clicked');
+		$('.ent').toggleClass('des_clicked');
+	});
+});

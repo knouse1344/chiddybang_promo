@@ -6,6 +6,7 @@
 development:
   adapter: postgresql
   database: chiddy_dev
+  host: localhost
   pool: 5
   username: postgres
   password: brybo1423
@@ -16,6 +17,7 @@ development:
 test:
   adapter: postgresql
   database: chiddy_test
+  host: localhost
   pool: 5
   username: postgres
   password: brybo1423
@@ -23,6 +25,7 @@ test:
 production:
   adapter: postgresql
   database: chiddy_production
+  host: localhost
   pool: 5
   username: postgres
   password: brybo1423

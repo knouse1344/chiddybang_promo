@@ -174,17 +174,22 @@ setTimeout(function () {
 // JQUERY EVENTS
 
 $(document).ready(function() {
-	
 	$('.eng').on("click", function() {
-		$('.ent').toggleClass('eng_clicked');
-		$('.des').toggleClass('eng_clicked');
+		$('.ent').toggleClass('eng_clicked_ent');
+		$('.des').toggleClass('eng_clicked_des');
+		$('.eng-desc').toggleClass('opacity');
+		$(this).toggleClass('clicked');
 	});
 	$('.ent').on("click", function() {
-		$('.eng').toggleClass('ent_clicked');
-		$('.des').toggleClass('ent_clicked');
+		$('.eng').toggleClass('ent_clicked_eng');
+		$('.des').toggleClass('ent_clicked_des');
+		$('.ent-desc').toggleClass('opacity');
+		$(this).toggleClass('clicked');
 	});
 	$('.des').on("click", function() {
-		$('.eng').toggleClass('des_clicked');
-		$('.ent').toggleClass('des_clicked');
+		$('.eng').toggleClass('des_clicked_eng');
+		$('.ent').toggleClass('des_clicked_ent');
+		$('.des-desc').toggleClass('opacity');
+		$(this).toggleClass('clicked');
 	});
 });

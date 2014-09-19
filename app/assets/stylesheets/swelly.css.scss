@@ -95,21 +95,26 @@
 
 #act-three {
 	visibility: hidden;
-	padding-bottom: 120px;
+	padding-bottom: 220px;
 }
 
 .triangle {
 	width: 633px;
+	min-height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	position: relative;
+	transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
 
 	.eng {
 		width: 309px;
-		position: relative;
-		left: 0;
-		right: 0;
+		position: absolute;
+		left: 182px;
+		top: 0;
 		cursor: pointer;
 		transition: all .25s ease-in-out;
 		-webkit-transition: all .25s ease-in-out;
@@ -118,11 +123,11 @@
 	}
 
 	.ent {
-		position: relative;
-		margin-top: -85px;
+		position: absolute;
+		margin-top: -55px;
 		float: right;
-		left: 0;
-		right: 0;
+		top: 363px;
+		left: 350px;
 		width: 316px;
 		cursor: pointer;
 		transition: all .25s ease-in-out;
@@ -132,11 +137,10 @@
 	}
 
 	.des {
-		position: relative;
-		margin-top: -85px;
-		float: left;
+		position: absolute;
+		margin-top: -55px;	
 		left: 0;
-		right: 0;
+		top: 363px;
 		width: 317px;
 		cursor: pointer;
 		transition: all .25s ease-in-out;
@@ -145,18 +149,68 @@
 		-o-transition: all .25s ease-in-out;
 	}
 
-	.eng_clicked {
-		margin-top: 200px;
-		opacity: .25;
+	.clicked {
+		left: -15%;
+		top: 80px;
 	}
 
-	.ent_clicked {
-		left: -200px;
-		opacity: .25;
+	.eng_clicked_des {
+		display: none;
+	}
+	.eng_clicked_ent {
+		display: none;
+	}
+
+	.ent_clicked_eng {
+		display: none;
+	}
+	.ent_clicked_des {
+		display: none;
 	}	
 
-	.des_clicked {
-		left: 200px;
-		opacity: .25;
+	.des_clicked_ent {
+		display: none;
 	}
+	.des_clicked_eng {
+		display: none;
+	}
+}
+
+.opacity {
+	opacity: 1 !important;
+}
+
+.eng-desc, .des-desc, .ent-desc {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	opacity: 0;
+	transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+
+	h2 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: #fff;
+		text-align: left;
+		font-size: 64px;
+	}
+
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #ccc;
+		text-align: left;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.rotate {
+	-ms-transform: rotate(-120deg); /* IE 9 */
+    -webkit-transform: rotate(-120deg); /* Chrome, Safari, Opera */
+    -o-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    transform: rotate(-120deg);
 }

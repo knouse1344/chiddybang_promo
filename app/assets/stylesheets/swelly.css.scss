@@ -13,6 +13,7 @@
 
 #header-logo {
 	padding-top: 150px;
+	padding-bottom: 80px;
 	text-align: center;
 	position: relative;
 	width: 693px;
@@ -54,7 +55,17 @@
 
 #act-one {
 	visibility: hidden;
-	padding-bottom: 120px;
+	padding-bottom: 200px;
+
+	h1 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 48px;
+		margin-top: 0;
+		margin-bottom: 40px;
+		text-align: center;
+		color: #FAB608;
+		text-transform: uppercase;
+	}
 
 	p {
 		color: #fff;
@@ -68,7 +79,7 @@
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 600;
 		font-size: 24px;
-		margin-bottom: 25px;
+		margin-bottom: 65px;
 		margin-top: 30px;
 		text-transform: uppercase;
 	}
@@ -83,7 +94,7 @@
 }
 
 .gif {
-	padding-top: 40px;
+	padding-top: 80px;
 
 	img {
 		width: 360px;
@@ -92,50 +103,67 @@
 
 #act-two {
 	visibility: hidden;
-	padding-bottom: 120px;
+	padding-bottom: 200px;
+
+	h1 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 48px;
+		margin-top: 0;
+		margin-bottom: 40px;
+		text-align: center;
+		color: #FAB608;
+		text-transform: uppercase;
+	}
 
 	h2 {
 		color: #fff;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 600;
-		margin-bottom: 25px;
+		margin-bottom: 65px;
 		margin-top: 30px;
 		font-size: 24px;
 		text-transform: uppercase;
+		position: relative;
 	}
 
 	i {
 		font-size: 48px;
 		width: 58px;
 		color: #FAB608;
-		position: relative;
-		margin-right: 15px;
-		bottom: -5px;
+		position: absolute;
+		top: -10px;
+		left: -75px;
 	}
 }
 
 #act-three {
 	visibility: hidden;
-	padding-bottom: 220px;
+	padding-bottom: 240px;
 }
 
 .section-heading {
-	width: 376px;
-	float: left;
-}
+	padding-bottom: 40px;
 
-.section-heading-line {
-	background: url('/assets/act_line.png') repeat-x;
-	height: 58px;
-	margin-top: 67px;
-	margin-left: 400px;
+	.title{
+		width: 376px;
+		float: left;
+	}
 
-	.cap {
-		float: right;
-		margin-top: -17px;
-		margin-right: -28px;
+	.line {
+		background: url('/assets/act_line.png') repeat-x;
+		height: 58px;
+		margin-top: 67px;
+		margin-left: 400px;
+
+		.cap {
+			float: right;
+			margin-top: -17px;
+			margin-right: -28px;
+		}
 	}
 }
+
+
 
 .triangle {
 	width: 633px;

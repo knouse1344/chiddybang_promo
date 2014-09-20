@@ -212,24 +212,30 @@
 		}
 
 		.eng_clicked_des {
-			display: none;
+			width: 50px;
+			opacity: .5;
 		}
 		.eng_clicked_ent {
-			display: none;
+			width: 50px;
+			opacity: .5;
 		}
 
 		.ent_clicked_eng {
-			display: none;
+			width: 50px;
+			opacity: .5;
 		}
 		.ent_clicked_des {
-			display: none;
+			width: 50px;
+			opacity: .5;
 		}	
 
 		.des_clicked_ent {
-			display: none;
+			width: 50px;
+			opacity: .5;
 		}
 		.des_clicked_eng {
-			display: none;
+			width: 50px;
+			opacity: .5;
 		}
 	}
 	
@@ -247,7 +253,8 @@
 			font-family: 'Open Sans Condensed', sans-serif;
 			color: #fff;
 			text-align: left;
-			font-size: 48px;
+			font-size: 38px;
+			text-transform: uppercase;
 		}
 
 		p {

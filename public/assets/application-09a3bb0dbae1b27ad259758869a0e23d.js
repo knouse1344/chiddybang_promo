@@ -10935,20 +10935,59 @@ setTimeout(function () {
 $(document).ready(function() {
 	$('.eng').on("click", function() {
 		$('.ent').toggleClass('eng_clicked_ent');
+        $('.ent').removeClass('des_clicked_ent clicked');
+
 		$('.des').toggleClass('eng_clicked_des');
-		$('.eng-desc').toggleClass('opacity');
+        $('.des').removeClass('ent_clicked_des clicked');
+
+        if ( $(this).hasClass('clicked') ) {
+            $('.eng-desc').removeClass('opacity');
+        } else {
+            $('.eng-desc').addClass('opacity');
+        }
+        
+        $('.ent-desc').removeClass('opacity');
+        $('.des-desc').removeClass('opacity');
+
+        $(this).removeClass('ent_clicked_eng des_clicked_eng');
 		$(this).toggleClass('clicked');
 	});
 	$('.ent').on("click", function() {
 		$('.eng').toggleClass('ent_clicked_eng');
-		$('.des').toggleClass('ent_clicked_des');
-		$('.ent-desc').toggleClass('opacity');
+        $('.eng').removeClass('des_clicked_eng clicked');
+
+		$('.des').toggleClass('ent_clicked_des');        
+        $('.des').removeClass('eng_clicked_des clicked');
+
+        if ( $(this).hasClass('clicked') ) {
+            $('.ent-desc').removeClass('opacity');
+        } else {
+            $('.ent-desc').addClass('opacity');
+        }
+
+        $('.eng-desc').removeClass('opacity');
+        $('.des-desc').removeClass('opacity');
+
+        $(this).removeClass('eng_clicked_ent des_clicked_ent');
 		$(this).toggleClass('clicked');
 	});
 	$('.des').on("click", function() {
 		$('.eng').toggleClass('des_clicked_eng');
+        $('.eng').removeClass('ent_clicked_eng clicked');
+
 		$('.ent').toggleClass('des_clicked_ent');
-		$('.des-desc').toggleClass('opacity');
+        $('.ent').removeClass('eng_clicked_ent clicked');
+
+        if ( $(this).hasClass('clicked') ) {
+            $('.des-desc').removeClass('opacity');
+        } else {
+            $('.des-desc').addClass('opacity');
+        }
+
+        $('.eng-desc').removeClass('opacity');
+        $('.ent-desc').removeClass('opacity');
+
+        $(this).removeClass('ent_clicked_des eng_clicked_des');
 		$(this).toggleClass('clicked');
 	});
 });

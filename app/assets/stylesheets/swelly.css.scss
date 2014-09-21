@@ -97,7 +97,7 @@
 }
 
 .gif {
-	padding-top: 80px;
+	padding-top: 10px;
 
 	img {
 		width: 360px;
@@ -131,15 +131,30 @@
 		position: relative;
 	}
 
-	.gold {
-		padding-top: 40px;
+	.boom {
+		width: 478px;
+		height: 262px;
+		margin: auto;
+		position: relative;
 
 		img {
-			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.boom-text {
+			opacity: .25;
+		}
+
+		.boom-inner {
+			opacity: .25;
+		}
+
+		.boom-outer {
+			opacity: .25;
 		}
 	}
-
-
 }
 
 #act-three {

@@ -94,6 +94,28 @@ function flicker_slow(item, count, callback, current) {
     }, 80);
 }
 
+function boom_flicker() {
+    $('.boom-text').css("opacity", ".25")
+    $('.boom-inner').css("opacity", ".25")
+    $('.boom-outer').css("opacity", ".25")
+
+    setTimeout(function () {
+        $('.boom-text').css("opacity", "1")
+    }, 1000);
+
+    setTimeout(function() {
+        $('.boom-inner').css("opacity", "1")
+    }, 2000);
+
+    setTimeout(function() {
+        $('.boom-outer').css("opacity", "1")
+    }, 3000);   
+
+    setTimeout(function() {
+        boom_flicker();
+    }, 4000);
+}
+
 
 
 
@@ -168,6 +190,10 @@ setTimeout(function () {
 
     })
 }, 2250)
+
+setTimeout(function () {
+    boom_flicker()
+}, 5000)
 
 
 

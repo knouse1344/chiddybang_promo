@@ -59,9 +59,10 @@
 
 	h1 {
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 48px;
-		margin-top: 0;
-		margin-bottom: 40px;
+		font-size: 40px;
+		letter-spacing: 1px;
+		margin-top: 15px;
+		margin-bottom: 60px;
 		text-align: center;
 		color: #FAB608;
 		text-transform: uppercase;
@@ -78,7 +79,7 @@
 		color: #fff;
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 600;
-		font-size: 24px;
+		font-size: 28px;
 		margin-bottom: 65px;
 		margin-top: 30px;
 		text-transform: uppercase;
@@ -107,9 +108,10 @@
 
 	h1 {
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 48px;
-		margin-top: 0;
-		margin-bottom: 40px;
+		font-size: 40px;
+		letter-spacing: 1px;
+		margin-top: 15px;
+		margin-bottom: 60px;
 		text-align: center;
 		color: #FAB608;
 		text-transform: uppercase;
@@ -122,7 +124,7 @@
 		margin-bottom: 65px;
 		margin-top: 30px;
 		line-height: 60px;
-		font-size: 24px;
+		font-size: 28px;
 		text-transform: uppercase;
 		position: relative;
 	}
@@ -151,9 +153,9 @@
 
 	h1 {
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 48px;
-		margin-top: 0;
-		margin-bottom: 40px;
+		font-size: 40px;
+		margin-top: 15px;
+		margin-bottom: 60px;
 		text-align: center;
 		color: #FAB608;
 		text-transform: uppercase;
@@ -207,35 +209,61 @@
 		}
 
 		.clicked {
-			left: -15%;
-			top: 80px;
+			width: 250px;
 		}
 
 		.eng_clicked_des {
-			width: 50px;
+			width: 75px;
+			left: -20px;
+			top: 375px;
 			opacity: .5;
 		}
 		.eng_clicked_ent {
-			width: 50px;
+			width: 75px;
+			left: 65px;
+			top: 375px;
 			opacity: .5;
 		}
 
 		.ent_clicked_eng {
-			width: 50px;
+			width: 75px;
+			left: -115px;
+			top: 30px;
 			opacity: .5;
 		}
 		.ent_clicked_des {
-			width: 50px;
+			width: 75px;
+			top: 165px;
+			left: -160px;
 			opacity: .5;
 		}	
 
 		.des_clicked_ent {
-			width: 50px;
+			width: 75px;
+			left: 195px;
+			top: 160px;
 			opacity: .5;
 		}
 		.des_clicked_eng {
-			width: 50px;
+			width: 75px;
+			left: 150px;
+			top: 25px;
 			opacity: .5;
+		}
+
+		.eng.clicked {
+			top: 25px;
+			left: -10%;
+		}
+
+		.ent.clicked {
+			top: 130px;
+			left: -6%;
+		}
+
+		.des.clicked {
+			top: 130px;
+			left: -16%;
 		}
 	}
 	

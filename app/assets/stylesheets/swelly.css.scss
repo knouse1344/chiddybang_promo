@@ -272,6 +272,7 @@
 		top: 160px;
 		left: 50%;
 		opacity: 0;
+		z-index: 9999;
 		transition: all .15s ease-in-out;
 		-webkit-transition: all .15s ease-in-out;
 		-moz-transition: all .15s ease-in-out;
@@ -281,7 +282,7 @@
 			font-family: 'Open Sans Condensed', sans-serif;
 			color: #fff;
 			text-align: left;
-			font-size: 38px;
+			font-size: 34px;
 			text-transform: uppercase;
 		}
 

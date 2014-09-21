@@ -83,14 +83,16 @@
 		margin-bottom: 65px;
 		margin-top: 30px;
 		text-transform: uppercase;
+		position: relative;
 	}
 
 	i {
 		font-size: 48px;
+		width: 58px;
 		color: #FAB608;
-		position: relative;
-		bottom: -5px;
-		margin-right: 15px;
+		position: absolute;
+		top:-6px;
+		left: -75px;
 	}
 }
 
@@ -123,7 +125,7 @@
 		font-weight: 600;
 		margin-bottom: 65px;
 		margin-top: 30px;
-		line-height: 60px;
+		line-height: 42px;
 		font-size: 28px;
 		text-transform: uppercase;
 		position: relative;
@@ -137,14 +139,7 @@
 		}
 	}
 
-	i {
-		font-size: 48px;
-		width: 58px;
-		color: #FAB608;
-		position: absolute;
-		top:7px;
-		left: -75px;
-	}
+
 }
 
 #act-three {
@@ -272,7 +267,6 @@
 		top: 160px;
 		left: 50%;
 		opacity: 0;
-		z-index: 9999;
 		transition: all .15s ease-in-out;
 		-webkit-transition: all .15s ease-in-out;
 		-moz-transition: all .15s ease-in-out;
@@ -321,4 +315,13 @@
 
 .opacity {
 	opacity: 1 !important;
+}
+
+#credits {
+	padding-top: 80px;
+	padding-bottom: 160px;
+
+	h2 {
+		color: #fff;
+	}
 }

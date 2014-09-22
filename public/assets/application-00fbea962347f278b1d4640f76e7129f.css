@@ -332,49 +332,76 @@ h1, h2 {
   text-transform: uppercase;
 }
 /* line 298, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
-#act-three .eng-desc p, #act-three .des-desc p, #act-three .ent-desc p {
+#act-three .eng-desc ul, #act-three .des-desc ul, #act-three .ent-desc ul {
+  margin-bottom: 50px;
+}
+/* line 301, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+#act-three .eng-desc ul li, #act-three .des-desc ul li, #act-three .ent-desc ul li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #fafafa;
   text-align: left;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+/* line 311, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+#act-three .eng-desc p, #act-three .des-desc p, #act-three .ent-desc p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #fafafa;
+}
+/* line 318, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+#act-three .eng-desc .credit, #act-three .des-desc .credit, #act-three .ent-desc .credit {
+  margin-left: 25px;
+  font-size: 16px;
 }
 
-/* line 309, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+/* line 325, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
 .section-heading {
   padding-bottom: 40px;
 }
-/* line 312, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+/* line 328, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
 .section-heading .title {
   width: 376px;
   float: left;
 }
-/* line 317, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+/* line 333, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
 .section-heading .line {
   background: url("/assets/act_line.png") repeat-x;
   height: 58px;
   margin-top: 67px;
   margin-left: 400px;
 }
-/* line 323, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+/* line 339, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
 .section-heading .line .cap {
   float: right;
   margin-top: -17px;
   margin-right: -28px;
 }
 
-/* line 331, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+/* line 347, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
 .opacity {
   opacity: 1 !important;
 }
 
-/* line 335, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+/* line 351, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
 #credits {
   padding-top: 80px;
   padding-bottom: 160px;
 }
-/* line 339, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
-#credits h2 {
-  color: #fff;
+/* line 355, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+#credits .responsive {
+  margin-bottom: 25px;
+}
+/* line 359, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+#credits .responsive:hover {
+  opacity: .6;
+}
+/* line 363, /home/bryan/Documents/chiddy_bang/app/assets/stylesheets/swelly.css.scss */
+#credits a {
+  display: inline-block;
+  margin: 0 25px;
+  color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
 }

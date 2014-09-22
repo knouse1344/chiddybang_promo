@@ -295,13 +295,29 @@
 			text-transform: uppercase;
 		}
 
+		ul {
+			margin-bottom: 50px; 
+
+			li {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 400;
+				color: #fafafa;
+				text-align: left;
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+		}
+
 		p {
 			font-family: 'Open Sans', sans-serif;
-			font-weight: 400;
-			color: #fafafa;
-			text-align: left;
+			font-style: italic;
 			font-size: 20px;
-			margin-bottom:30px;
+			color: #fafafa;
+		}
+
+		.credit {
+			margin-left: 25px;
+			font-size: 16px;
 		}
 	}
 }
@@ -336,7 +352,18 @@
 	padding-top: 80px;
 	padding-bottom: 160px;
 
-	h2 {
-		color: #fff;
+	.responsive {
+		margin-bottom: 25px;
+	}
+
+	.responsive:hover {
+		opacity: .6;
+	}
+
+	a {
+		display: inline-block;
+		margin: 0 25px;
+		color: #fafafa;
+		font-family: 'Open Sans', sans-serif;
 	}
 }
